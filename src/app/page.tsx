@@ -39,11 +39,11 @@ if(data.length === 0) return <div className='font-bold'>Loading blogs...</div>;
 
   return (
     <div>
-      <div className='flex flex-col md:flex-row lg:flex-row gap-6 p-6 mx-6'>
+      <div className='flex flex-col md:flex-row lg:flex-row gap-4 p-4 mx-2'>
         <h1 className='text-orange-500 text-md md:text-md lg:text-xl text-center font-semibold mt-20'>Good health is the key to a fulfilling life,<br/> enabling you to live with energy, purpose and vitality.</h1>
         <Image src="/Image/healthybanner.webp" alt="hero image" width={600} height={600} />
       </div>
-    <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+    <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-2'>
       {data.map((blog, index) => (
       <div key={index} className='max-w-sm mx-auto border border-black rounded-lg shadow-xl overflow-hidden m-3 bg-amber-600 hover:bg-lime-700'>
         <Image 
